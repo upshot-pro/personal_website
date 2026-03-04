@@ -1,0 +1,28 @@
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+.fade-in:nth-child(1) { animation-delay: 0.05s; }
+.fade-in:nth-child(2) { animation-delay: 0.15s; }
+.fade-in:nth-child(3) { animation-delay: 0.25s; }
+.fade-in:nth-child(4) { animation-delay: 0.35s; }
+.fade-in:nth-child(5) { animation-delay: 0.45s; }
+.fade-in:nth-child(6) { animation-delay: 0.55s; }
+.fade-in:nth-child(7) { animation-delay: 0.65s; }
+
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  nav { margin-bottom: 60px; }
+  .hero { padding: 20px 0 70px; }
+  .nav-links { gap: 20px; }
+  .nav-right { gap: 20px; }
+  .connect-grid { flex-direction: column; }
+  .connect-link { justify-content: center; }
+}

@@ -1,0 +1,61 @@
+/* Theme Variables & Reset */
+:root {
+  --bg: #0a0a0b;
+  --surface: #111113;
+  --text: #e8e6e3;
+  --text-dim: #8a8a8a;
+  --accent: #81b5a1;
+  --link: #81b5a1;
+  --link-hover: #a3d4c0;
+  --border: #1e1e22;
+  --glow: rgba(129, 181, 161, 0.08);
+  --hero-color: #fff;
+  --selection-bg: rgba(129, 181, 161, 0.3);
+  --selection-color: #fff;
+  --link-underline: rgba(129, 181, 161, 0.2);
+  --connect-hover-border: rgba(129, 181, 161, 0.3);
+}
+
+[data-theme="light"] {
+  --bg: #f0ece2;
+  --surface: #f7f4ed;
+  --text: #1c1c1c;
+  --text-dim: #6b6b6b;
+  --accent: #4d8b6f;
+  --link: #4d8b6f;
+  --link-hover: #3d7259;
+  --border: #ddd8ce;
+  --glow: rgba(77, 139, 111, 0.05);
+  --hero-color: #111;
+  --selection-bg: rgba(77, 139, 111, 0.2);
+  --selection-color: #111;
+  --link-underline: rgba(77, 139, 111, 0.25);
+  --connect-hover-border: rgba(77, 139, 111, 0.3);
+}
+
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+::selection {
+  background: var(--selection-bg);
+  color: var(--selection-color);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
