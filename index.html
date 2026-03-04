@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gaurav sehgal</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/nav.css" />
+    <link rel="stylesheet" href="css/sections.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="container">
+        <a href="#" class="nav-logo">gs.</a>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#about">about</a></li>
+            <li><a href="#connect">connect</a></li>
+          </ul>
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark and light mode"
+          >
+            <div class="toggle-knob">
+              <i class="icon-moon" data-lucide="moon"></i>
+              <i class="icon-sun" data-lucide="sun"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="fade-in">
+          <h1>gaurav sehgal<span class="dot">.</span></h1>
+          <p class="tagline">software engineer</p>
+        </div>
+      </section>
+
+      <!-- Journey markers -->
+      <section class="journey fade-in">
+        <div class="journey-row">
+          <h3>
+            sparksoft corp &rarr; the world bank &rarr; accenture federal
+            services
+          </h3>
+        </div>
+        <div class="journey-row">
+          <h3>
+            <span class="dim"
+              >keeping healthcare.gov running for millions of americans</span
+            >
+          </h3>
+        </div>
+      </section>
+
+      <div class="divider fade-in"></div>
+
+      <!-- About -->
+      <section class="about fade-in" id="about">
+        <p class="section-label">a brief introduction</p>
+
+        <p>
+          right now, i'm a site reliability engineer at
+          <a
+            href="https://www.accenture.com/us-en/industries/accenture-federal-services"
+            target="_blank"
+            rel="noopener"
+            >accenture federal services</a
+          >, on the team that manages
+          <a href="https://www.healthcare.gov" target="_blank" rel="noopener"
+            >healthcare.gov</a
+          >. i focus on keeping critical infrastructure reliable, observable,
+          and resilient at scale.
+        </p>
+
+        <p>
+          previously, i was a software engineer at
+          <a href="https://sparksoftcorp.com" target="_blank" rel="noopener"
+            >sparksoft corporation</a
+          >
+          building cloud-based applications for government clients, and before
+          that i worked as an analyst at
+          <a href="https://www.worldbank.org" target="_blank" rel="noopener"
+            >the world bank</a
+          >.
+        </p>
+
+        <p>
+          i care about writing clean code, building things that matter, and
+          always learning something new. when i'm not working, you can probably
+          find me exploring new tech, reading, or thinking about what to build
+          next.
+        </p>
+      </section>
+
+      <div class="divider fade-in"></div>
+
+      <!-- Connect -->
+      <section class="connect fade-in" id="connect">
+        <p class="section-label">say hello</p>
+
+        <div class="connect-grid">
+          <a
+            href="https://linkedin.com/in/gsehgal2"
+            target="_blank"
+            rel="noopener"
+            class="connect-link"
+          >
+            <i data-lucide="linkedin"></i>
+            linkedin
+          </a>
+          <a href="mailto:contact@gauravsehgal.com" class="connect-link">
+            <i data-lucide="mail"></i>
+            email
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2026 gaurav sehgal</p>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
