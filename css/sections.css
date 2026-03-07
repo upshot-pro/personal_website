@@ -1,4 +1,4 @@
-/* Hero */
+/* Hero — name and tagline */
 .hero {
   padding: 20px 0 60px;
 }
@@ -13,7 +13,9 @@
   transition: color 0.4s ease;
 }
 
-.hero h1 .dot { color: var(--accent); }
+.hero h1 .dot {
+  color: var(--accent);
+}
 
 .hero .tagline {
   font-size: 15px;
@@ -28,7 +30,7 @@
   opacity: 0.3;
 }
 
-/* Journey */
+/* Journey — career path markers */
 .journey {
   padding: 0 0 20px;
   margin-bottom: 40px;
@@ -60,8 +62,10 @@
   font-weight: 400;
 }
 
-/* About */
-.about { padding-bottom: 50px; }
+/* About — bio text */
+.about {
+  padding-bottom: 50px;
+}
 
 .about p {
   font-size: 16px;
@@ -71,7 +75,9 @@
   font-weight: 300;
 }
 
-.about p:last-child { margin-bottom: 0; }
+.about p:last-child {
+  margin-bottom: 0;
+}
 
 .about a {
   color: var(--link);
@@ -85,14 +91,14 @@
   border-bottom-color: var(--link-hover);
 }
 
-/* Divider */
+/* Divider line between sections */
 .divider {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--border), transparent);
   margin: 40px 0;
 }
 
-/* Section label */
+/* Small label above sections */
 .section-label {
   font-size: 11px;
   font-weight: 500;
@@ -103,8 +109,10 @@
   opacity: 0.8;
 }
 
-/* Connect */
-.connect { padding-bottom: 60px; }
+/* Connect — link buttons */
+.connect {
+  padding-bottom: 60px;
+}
 
 .connect-grid {
   display: flex;
@@ -112,6 +120,7 @@
   gap: 12px;
 }
 
+/* Each button — add more in index.html inside .connect-grid */
 .connect-link {
   display: inline-flex;
   align-items: center;
@@ -142,7 +151,9 @@
   transition: opacity 0.3s ease;
 }
 
-.connect-link:hover svg { opacity: 1; }
+.connect-link:hover svg {
+  opacity: 1;
+}
 
 /* Footer */
 footer {

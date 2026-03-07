@@ -1,4 +1,4 @@
-/* Navigation & Theme Toggle */
+/* Nav bar */
 nav {
   padding: 28px 0 0;
   margin-bottom: 50px;
@@ -10,6 +10,7 @@ nav .container {
   align-items: center;
 }
 
+/* "gs." logo — top left */
 .nav-logo {
   font-size: 14px;
   font-weight: 500;
@@ -19,7 +20,9 @@ nav .container {
   transition: color 0.3s ease;
 }
 
-.nav-logo:hover { color: var(--text); }
+.nav-logo:hover {
+  color: var(--text);
+}
 
 .nav-right {
   display: flex;
@@ -27,6 +30,7 @@ nav .container {
   gap: 28px;
 }
 
+/* Nav links */
 .nav-links {
   display: flex;
   gap: 28px;
@@ -42,8 +46,9 @@ nav .container {
   position: relative;
 }
 
+/* Underline that slides in on hover */
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -4px;
   left: 0;
@@ -53,10 +58,14 @@ nav .container {
   transition: width 0.3s ease;
 }
 
-.nav-links a:hover { color: var(--text); }
-.nav-links a:hover::after { width: 100%; }
+.nav-links a:hover {
+  color: var(--text);
+}
+.nav-links a:hover::after {
+  width: 100%;
+}
 
-/* Theme Toggle */
+/* Theme toggle pill */
 .theme-toggle {
   width: 44px;
   height: 24px;
@@ -73,6 +82,7 @@ nav .container {
   border-color: var(--connect-hover-border);
 }
 
+/* Sliding knob inside the toggle */
 .toggle-knob {
   position: absolute;
   top: 3px;
@@ -81,7 +91,9 @@ nav .container {
   height: 16px;
   border-radius: 50%;
   background: var(--accent);
-  transition: transform 0.4s cubic-bezier(0.68, -0.15, 0.265, 1.35), background 0.4s ease;
+  transition:
+    transform 0.4s cubic-bezier(0.68, -0.15, 0.265, 1.35),
+    background 0.4s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,8 +110,17 @@ nav .container {
   transition: all 0.3s ease;
 }
 
-.icon-sun { display: none; }
-.icon-moon { display: block; }
+/* Icon swap — moon shown in dark, sun in light */
+.icon-sun {
+  display: none;
+}
+.icon-moon {
+  display: block;
+}
 
-[data-theme="light"] .icon-sun { display: block; }
-[data-theme="light"] .icon-moon { display: none; }
+[data-theme="light"] .icon-sun {
+  display: block;
+}
+[data-theme="light"] .icon-moon {
+  display: none;
+}
