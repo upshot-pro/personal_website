@@ -1,19 +1,19 @@
 /* Colors — dark mode defaults, light mode overrides below */
 :root {
-  --bg: #0a0a0b;
-  --surface: #111113;
-  --text: #e8e6e3;
-  --text-dim: #8a8a8a;
-  --accent: #81b5a1; /* teal — used for dots, labels, underlines */
-  --link: #81b5a1;
-  --link-hover: #a3d4c0;
-  --border: #1e1e22;
-  --glow: rgba(129, 181, 161, 0.08); /* connect button hover bg */
-  --hero-color: #fff;
-  --selection-bg: rgba(129, 181, 161, 0.3);
-  --selection-color: #fff;
-  --link-underline: rgba(129, 181, 161, 0.2);
-  --connect-hover-border: rgba(129, 181, 161, 0.3);
+  --bg: #0b0f19;
+  --surface: #171c28;
+  --text: #e2e8f0;
+  --text-dim: #94a3b8;
+  --accent: #38bdf8; /* sky blue — used for dots, labels, underlines */
+  --link: #38bdf8;
+  --link-hover: #7dd3fc;
+  --border: #1e293b;
+  --glow: rgba(56, 189, 248, 0.08); /* connect button hover bg */
+  --hero-color: #ffffff;
+  --selection-bg: rgba(56, 189, 248, 0.3);
+  --selection-color: #ffffff;
+  --link-underline: rgba(56, 189, 248, 0.2);
+  --connect-hover-border: rgba(56, 189, 248, 0.3);
 }
 
 /* Light mode — toggled via data-theme="light" on <html> */
